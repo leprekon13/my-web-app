@@ -1,8 +1,12 @@
 package com.example;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class MyWebApp {
-    // Метод для запуска приложения
-    public void start() {
-        System.out.println("Веб-приложение запущено!");
+    @GetMapping("/")
+    public String home() {
+        return "Веб-приложение запущено!";
     }
 }

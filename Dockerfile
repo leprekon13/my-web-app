@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Копируем собранный JAR файл из target в контейнер
-COPY target/my-web-app.jar /app/my-web-app.jar
+COPY target/my-web-app-1.0-SNAPSHOT.jar /app/my-web-app.jar
 
 # Открываем порт 8080 для доступа
 EXPOSE 8080

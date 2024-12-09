@@ -1,9 +1,11 @@
 package com.example;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-        // Создание экземпляра класса MyWebApp и запуск приложения
-        MyWebApp app = new MyWebApp();
-        app.start();
+        SpringApplication.run(Main.class, args);  // Запуск Spring Boot приложения
     }
 }
